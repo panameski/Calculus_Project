@@ -392,6 +392,10 @@ A function can be continuous at a point without being differentiable there, as d
 $y = |x|$ at $x = 0$.
 
 
+
+
+
+
 % ============================================================
 %  ACTIVITY 3: Riemann Sums and Definite Integration
 % ============================================================
@@ -416,9 +420,10 @@ The following procedures were executed in GeoGebra to perform the analysis:
 The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On $[0,2]$, it rises from $y=2$ at $x=0$ to $y=6$ at $x=2$.
 
 % This minipage block prevents LaTeX from separating the image and table
+
 \begin{minipage}{\textwidth}
     \centering
-    \includegraphics[width=0.55\textwidth]{Act4.png}
+    \includegraphics[width=0.4cm\textwidth]{Act4.png}
     \captionof{figure}{The region under $y=x^2+2$ on $[0,2]$ approximated by rectangles.}
     \label{fig:act3graph}
     \vspace{0.3em} % Adds a small space between image and table
@@ -569,6 +574,16 @@ The total area of the bounded region is:
 
 \subsubsection*{Part (b-iv) — Established Relation}
 The area of the bounded region is established as the difference between the areas of the upper and lower functions: $A = A_{upper} - A_{lower}$.
+
+
+
+
+
+
+
+
+
+
 % ============================================================
 %  GENERAL CONCLUSION
 % ============================================================
