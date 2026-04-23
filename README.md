@@ -165,7 +165,7 @@ In this project, these concepts are explored using graphs, calculations, and Geo
 \section{Activity 1: Functions and Their Derivatives}
 
 \subsection{Introduction}
-This activity explores the relationship between a function and the graphs of its first and second derivatives. Understanding how the sign and magnitude of $f'(x)$ and $f''(x)$ encode information about the shape, direction, and curvature of $f(x)$ is a cornerstone of differential calculus. We investigate these relationships using $f(x) = x^2 e^{-x}$ and verify our conjectures with $g(x) = x^3 + 4x + 2$.
+This activity explores the relationship between a function and the graphs of its first and second derivatives. We investigate these relationships using $f(x) = x^2 e^{-x}$ and verify our conjectures with $g(x) = x^3 + 4x + 2$.
 
 \subsection{Methodology}
 To perform this analysis, the following steps were taken in GeoGebra:
