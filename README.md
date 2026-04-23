@@ -190,7 +190,7 @@ Let $v = e^{-x} \implies v' = -e^{-x}$ (by the Chain Rule).
 \end{align*}
 
 \subsubsection*{Step-by-Step Second Derivative}
-To find $f''(x)$, we differentiate $f'(x) = (2x - x^2)e^{-x}$ using the Product Rule again.
+To find $f''(x)$, we differentiate $f'(x) = (2x - x^2)e^{-x}$ using the Product Rule.
 Let $u = 2x - x^2 \implies u' = 2 - 2x$.
 Let $v = e^{-x} \implies v' = -e^{-x}$.
 \begin{align*}
@@ -220,8 +220,8 @@ Let $v = e^{-x} \implies v' = -e^{-x}$.
 \subsubsection*{Part (iii) — Zeros and Sign of $f'(x)$}
 The first derivative $f'(x) = x(2-x)e^{-x}$ equals zero at $x = 0$ and $x = 2$. 
 \begin{itemize}
-    \item $f'(x) > 0$ on $(0, 2)$: The blue curve is above the x-axis, justifying that $f(x)$ is increasing.
-    \item $f'(x) < 0$ on $(-\infty, 0) \cup (2, \infty)$: The blue curve is below the x-axis, justifying that $f(x)$ is decreasing.
+    \item $f'(x) > 0$ on $(0, 2)$: The blue curve is above the x-axis, hence $f(x)$ is increasing on that particular domain.
+    \item $f'(x) < 0$ on $(-\infty, 0) \cup (2, \infty)$: The blue curve is below the x-axis, hence $f(x)$ is decreasing.
 \end{itemize}
 
 \subsubsection*{Part (iv) — Zeros and Sign of $f''(x)$}
@@ -234,10 +234,11 @@ Solving $x^2 - 4x + 2 = 0$ via the quadratic formula gives $x = 2 \pm \sqrt{2}$,
 \subsection{Discussion}
 
 \subsubsection*{Part (v) — Monotonicity Conjecture}
-\textbf{Conjecture:} A function $f(x)$ increases when $f'(x) > 0$, decreases when $f'(x) < 0$, and is stationary when $f'(x) = 0$. This holds true for all differentiable functions as the derivative represents the instantaneous rate of change.
+\textbf{Conjecture:} If the derivative $f'(x)$ is positive, the function $f(x)$ is going up. If it's negative, $f(x)$ is going down. If it's exactly zero, the function is flat at that point. This works for any differentiable function because the derivative just tells you how fast things are changing at an instant.
+\subsubsection*{Part (vi) — Verification with $g(x) = x^3 + 4x + 2$}
+To test the conjecture, we analyzed $g(x) = x^3 + 4x + 2$. After differentiating, we get $g'(x) = 3x^2 + 4$. Looking at this expression, it is clear that it will never be zero or negative. Since any real number squared is at least zero, the term $3x^2$ is always non-negative. By adding $4$ to it, the entire derivative is forced to stay at a minimum value of $4$. 
 
-\subsubsection*{Part (vi) — Verification with $g(x)$}
-For $g(x) = x^3 + 4x + 2$, the derivative is $g'(x) = 3x^2 + 4$. Since $x^2$ is always non-negative, $3x^2 + 4$ is always $\geq 4$. Thus, $g'(x) > 0$ for all $x$, and the graph of $g(x)$ is strictly increasing.
+Because $g'(x)$ stays strictly positive for every possible value of $x$, the function has no "flat" spots or turning points. This mathematically confirms that the graph of $g(x)$ is always climbing, or strictly increasing, across its entire domain, which perfectly aligns with our earlier conjecture.
 
 \subsubsection*{Part (vii) — Concavity Conjecture}
 \textbf{Conjecture:} The sign of the second derivative determines concavity. $f(x)$ is concave up where $f''(x) > 0$ and concave down where $f''(x) < 0$.
@@ -272,17 +273,17 @@ For $g(x)$, $g''(x) = 6x$. $g''(x) < 0$ for $x < 0$ and $g''(x) > 0$ for $x > 0$
 This activity explores the concepts of continuity and derivatives and investigates the relationship between them. We analyze whether a function is differentiable at a point where it is discontinuous or where it is continuous but has a sharp change in direction[cite: 27, 28].
 
 \subsection{Methodology}
-I utilized GeoGebra to graph $f(x) = \frac{x-3}{\sqrt{x^2-9}}$ and developed applets to test behavior at $x=1$ and $x=3$. A tabular approach was used in the Spreadsheet view to observe limits, while a graphical approach using the difference quotient was used to establish the existence of derivatives.
+We utilized GeoGebra to graph $f(x) = \frac{x-3}{\sqrt{x^2-9}}$ and developed applets to test behavior at $x=1$ and $x=3$. A tabular approach was used in the Spreadsheet view to observe limits, while a graphical approach using the difference quotient was used to establish the existence of derivatives.
 
 \subsection{Results}
 
 \subsubsection*{Part (i) — Global Graph of the Function}
-The function was plotted to identify its domain and overall behavior.
+
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\textwidth]{Activity 2 (a)(i).png}
-    \caption{Global graph of $f(x)$ showing the domain $(-\infty, -3) \cup (3, \infty)$[cite: 24].}
+    \caption{Graph of $f(x)$ showing the domain $(-\infty, -3) \cup (3, \infty)$[cite: 24].}
 \end{figure}
 
 \subsubsection*{Part (ii) — Continuity Applet (Graphical and Tabular)}
@@ -311,8 +312,7 @@ The function was plotted to identify its domain and overall behavior.
 \textbf{Findings:} The function is discontinuous at $x=1$ and $x=3$ because it is undefined at those points.
 
 \subsubsection*{Part (iii) — Differentiability Applet}
-A second applet was used to check the existence of the derivative using the limit of the difference quotient.
-
+We used another applet to see if the derivative exists by looking at the limit of the difference quotient.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.6\textwidth]{Act3.png} 
@@ -321,79 +321,18 @@ A second applet was used to check the existence of the derivative using the limi
 
 \subsection{Discussion}
 
-\section*{iv) Derivative at a Point of Discontinuity}
+\subsubsection*{Part (iv) — Derivative at Discontinuity}
+Based on results in (ii) and (iii), the derivative does not exist at points of discontinuity.
 
-Based on the results from parts (ii) and (iii) for $f(x) = \dfrac{x-3}{\sqrt{x^2-9}}$, the function is
-discontinuous at $x = 3$ (the expression is undefined there), and the derivative at $x = 3$ was
-also found not to exist.
+\subsubsection*{Part (v) — Differentiability at a Continuous Point}
 
-This leads to the following conclusion:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Screenshot 2026-04-23 232643.png}
+    \caption{}
+\end{figure}
 
-\begin{theorem}
-If $f$ is not continuous at $x = a$, then $f$ is not differentiable at $x = a$.
-\end{theorem}
-
-\begin{proof}
-The derivative of $f$ at $x = a$ is defined as:
-\[
-    f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
-\]
-For this limit to exist, $f(a)$ must itself be defined, and $f$ must be continuous at $x = a$.
-If $f$ is discontinuous at $x = a$, then either $f(a)$ is undefined, or
-$\lim_{x \to a} f(x) \neq f(a)$, in either case making the difference quotient ill-defined.
-Therefore, the derivative cannot exist at a point of discontinuity.
-\end{proof}
-
-\noindent\textbf{Conclusion:} The derivative of a function at a point of discontinuity does \textbf{not} exist.
-
-
-\section*{v) Differentiability at a Point of Continuity}
-
-Using the results from parts (ii) and (iii), continuity at a point is \emph{necessary} but
-\textbf{not sufficient} for differentiability. That is:
-\[
-    f \text{ differentiable at } a \implies f \text{ continuous at } a,
-    \qquad \text{but the converse is } \textbf{false}.
-\]
-
-\subsection*{Check: $y = |x|$ at $x = 0$}
-
-\textbf{Continuity:}
-\[
-    \lim_{x \to 0} |x| = 0 = f(0)
-\]
-So $y = |x|$ is continuous at $x = 0$. 
-
-\bigskip
-\textbf{Differentiability:}
-
-Left-hand derivative:
-\[
-    \lim_{h \to 0^-} \frac{|0 + h| - |0|}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1
-\]
-
-Right-hand derivative:
-\[
-    \lim_{h \to 0^+} \frac{|0 + h| - |0|}{h} = \lim_{h \to 0^+} \frac{h}{h} = +1
-\]
-
-Since the left-hand and right-hand derivatives are not equal:
-\[
-    \lim_{h \to 0^-} \frac{|h|}{h} \neq \lim_{h \to 0^+} \frac{|h|}{h}
-\]
-the derivative of $y = |x|$ at $x = 0$ does \textbf{not} exist, even though the function is
-continuous there.
-
-\subsection*{Summary}
-
-
-\noindent\textbf{Conclusion:} Differentiability is a strictly stronger condition than continuity.
-A function can be continuous at a point without being differentiable there, as demonstrated by
-$y = |x|$ at $x = 0$.
-
-
-
-
+Using $y = |x|$ as a check, it is shown that a function can be continuous at a point (like $x=0$) but fail to be differentiable due to a sharp corner.
 
 
 % ============================================================
@@ -420,72 +359,42 @@ The following procedures were executed in GeoGebra to perform the analysis:
 The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On $[0,2]$, it rises from $y=2$ at $x=0$ to $y=6$ at $x=2$.
 
 % This minipage block prevents LaTeX from separating the image and table
-
-\section{Part ii}
 \begin{minipage}{\textwidth}
     \centering
-    \includegraphics[width=0.4cm\textwidth]{Act4.png}
+    \includegraphics[width=0.55\textwidth]{Act4.png}
     \captionof{figure}{The region under $y=x^2+2$ on $[0,2]$ approximated by rectangles.}
     \label{fig:act3graph}
-    \vspace{0.3em} % Adds a small space between image and table
+    \vspace{1em} % Adds a small space between image and table
 
-    \captionof{table}{Part II: Right-endpoint Riemann sums $R_{n}$ for $y=x^{2}+2$ on $[0,2]$}
-    \begin{tabular}{cc}
+    \captionof{table}{Right-endpoint Riemann sums $R_{n}$ for $y=x^{2}+2$ on $[0,2]$}
+    \begin{tabular}{cc|cc}
     \toprule
-    $n$ & $R_{n}\midrule
-    10  & 7.0800  \\ 
-    20  & 6.8700  \\ 
-    30  & 6.8015 \\ 
-    60  & 6.7337 \\ \bottomrule
+    $n$ & $R_{n}$ & $n$ & $R_{n}$ \\ \midrule
+    10  & 7.0800 & 100   & 6.7068 \\ 
+    20  & 6.8700 & 500   & 6.6747 \\
+    30  & 6.8015 & 1000  & 6.6707 \\ 
+    60  & 6.7337 & 10000 & 6.6671 \\ \bottomrule
     \end{tabular}
 \end{minipage}
 
-\subsubsection*{Part (iii) — Riemann Sum Formula}
+\subsubsection*{Part (ii) — Riemann Sum Formula}
 Using the right-endpoint rule with $n$ equal sub-intervals ($\Delta x = 2/n$):
 \[
-R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} .
+R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} = \frac{4(n+1)(2n+1)}{3n^{2}}+4.
 \]
 
- As $n \to \infty$, the Riemann sum $R_n$ converges to $20/3$. This establishes that the definite integral is exactly the limit of the Riemann sums.
-
-
-
-\bigskip
-\bigskip
-\subsubsection{(v) Riemann Sums for Large $n$}
-
-\begin{table}[h]
-\centering
-\caption{Riemann sums for large $n$}
-\begin{tabular}{cc}
-\toprule
-$n$    & $R_{n}$  \\ \midrule
-100    & 6.7068   \\
-120    & 6.6989   \\
-140    & 6.6921   \\
-160    & 6.6863   \\
-180    & 6.6812   \\
-200    & 6.6768   \\ \bottomrule
-\end{tabular}
-\end{table}
-
-
-
-
-
-
-
-\subsubsection*{Part (iv) — Definite Integral and Conclusion}
+\subsubsection*{Part (iii) — Definite Integral and Conclusion}
 The exact area is calculated analytically as follows:
 \begin{align*}
 \int_{0}^{2}(x^{2}+2)\,dx &= \left[\frac{x^{3}}{3}+2x\right]_{0}^{2} \\
 &= \left(\frac{8}{3} + 4\right) - 0 = \frac{20}{3} \approx 6.6667
 \end{align*}
 
+\textbf{Conclusion:} As $n \to \infty$, the Riemann sum $R_n$ converges to $20/3$. This establishes that the definite integral is exactly the limit of the Riemann sums.
 
 
 
-                             n
+
 
 
 
@@ -603,16 +512,6 @@ The total area of the bounded region is:
 
 \subsubsection*{Part (b-iv) — Established Relation}
 The area of the bounded region is established as the difference between the areas of the upper and lower functions: $A = A_{upper} - A_{lower}$.
-
-
-
-
-
-
-
-
-
-
 % ============================================================
 %  GENERAL CONCLUSION
 % ============================================================
