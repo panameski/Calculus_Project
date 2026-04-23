@@ -451,6 +451,7 @@ R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} .
 
 
 \bigskip
+\bigskip
 \subsubsection{(v) Riemann Sums for Large $n$}
 
 \begin{table}[h]
@@ -460,10 +461,11 @@ R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} .
 \toprule
 $n$    & $R_{n}$  \\ \midrule
 100    & 6.7068   \\
-500    & 6.6747   \\
-1000   & 6.6707   \\
-5000   & 6.6675   \\
-10000  & 6.6671   \\ \bottomrule
+120    & 6.6989   \\
+140    & 6.6921   \\
+160    & 6.6863   \\
+180    & 6.6812   \\
+200    & 6.6768   \\ \bottomrule
 \end{tabular}
 \end{table}
 
