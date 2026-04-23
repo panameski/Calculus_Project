@@ -93,12 +93,30 @@ This project explores important concepts in engineering calculus, including deri
 GeoGebra was used as the primary tool for graphical visual and numerical approximation across all activities. Activity 1, the relationship between a function and its first and second derivatives was analyzed through graphical interpretation. Activity 2 which is continuity and differentiability, showing that differentiability implies continuity but not vice versa. Activity 3 explored the connection between Riemann sums and definite integrals, showing that as the number of rectangles increases the approximation approaches the exact value. Activity 4 focused on practical application of interaction, including the calculation of volume of solids of revolution and the area between curves. 
 
 \end{abstract}
+
+
+
+
+
+
+
+
+
+
  
 % ============================================================
 %  TABLE OF CONTENTS
 % ============================================================
 \newpage
 \tableofcontents
+
+
+
+
+
+
+
+
  
 % ============================================================
 %  ACKNOWLEDGEMENT
@@ -108,6 +126,9 @@ GeoGebra was used as the primary tool for graphical visual and numerical approxi
 \addcontentsline{toc}{section}{Acknowledgement}
  
 We would like to express our sincere gratitude to our Engineering Calculus Faculty for constantly encouraging us to go beyond our comfort zone to get solutions to problems. We are grateful to the Ashesi Writing Center, also, for helping us refine our texts and exposing us to better ways of expressing ourselves. We're grateful to our seniors and friends who stepped up to help us use tools to put this piece together. 
+
+
+
  
 % ============================================================
 %  GENERAL INTRODUCTION
@@ -119,6 +140,10 @@ Calculus is a branch of mathematics that helps us understand change and how thin
 In real life, calculus is used in many areas of science and engineering. For example, in physics, derivatives are used to calculate velocity and acceleration. If a car is moving, its speed at a specific moment is found using derivatives. Integrals are used to calculate the total distance the car travels over time. In engineering, calculus is used when designing structures like bridges and buildings to make sure they are safe and stable. Engineers also use integrals to calculate the volume of materials needed, such as concrete for construction.
 Another example is in medicine, where calculus is used to model how drugs move through the body over time. In economics, it is used to find maximum profit and minimum cost. These examples show that calculus is not just theory but is very useful in solving real-world problems.
 In this project, these concepts are explored using graphs, calculations, and GeoGebra. The point is to understand how derivatives and integrals work and how they can be applied to solve practical problems.
+
+
+
+
 
 
 
@@ -219,6 +244,18 @@ For $g(x) = x^3 + 4x + 2$, the derivative is $g'(x) = 3x^2 + 4$. Since $x^2$ is 
 
 \subsubsection*{Part (viii) — Verification with $g''(x)$}
 For $g(x)$, $g''(x) = 6x$. $g''(x) < 0$ for $x < 0$ and $g''(x) > 0$ for $x > 0$, aligning with the observed inflection point at the origin for cubic functions.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -347,6 +384,17 @@ The exact area is calculated analytically as follows:
 \end{align*}
 
 \textbf{Conclusion:} As $n \to \infty$, the Riemann sum $R_n$ converges to $20/3$. This establishes that the definite integral is exactly the limit of the Riemann sums.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
