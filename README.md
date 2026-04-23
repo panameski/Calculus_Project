@@ -446,6 +446,10 @@ Using the right-endpoint rule with $n$ equal sub-intervals ($\Delta x = 2/n$):
 R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} .
 \]
 
+ As $n \to \infty$, the Riemann sum $R_n$ converges to $20/3$. This establishes that the definite integral is exactly the limit of the Riemann sums.
+
+
+
 \subsubsection*{Part (iv) — Definite Integral and Conclusion}
 The exact area is calculated analytically as follows:
 \begin{align*}
@@ -453,7 +457,6 @@ The exact area is calculated analytically as follows:
 &= \left(\frac{8}{3} + 4\right) - 0 = \frac{20}{3} \approx 6.6667
 \end{align*}
 
-\textbf{(Part V)Conclusion:} As $n \to \infty$, the Riemann sum $R_n$ converges to $20/3$. This establishes that the definite integral is exactly the limit of the Riemann sums.
 
 
 
