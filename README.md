@@ -321,11 +321,75 @@ A second applet was used to check the existence of the derivative using the limi
 
 \subsection{Discussion}
 
-\subsubsection*{Part (iv) — Derivative at Discontinuity}
-Based on results in (ii) and (iii), the derivative does not exist at points of discontinuity.
+\section*{iv) Derivative at a Point of Discontinuity}
 
-\subsubsection*{Part (v) — Differentiability at a Continuous Point}
-Using $y = |x|$ as a check, it is shown that a function can be continuous at a point (like $x=0$) but fail to be differentiable due to a sharp corner.
+Based on the results from parts (ii) and (iii) for $f(x) = \dfrac{x-3}{\sqrt{x^2-9}}$, the function is
+discontinuous at $x = 3$ (the expression is undefined there), and the derivative at $x = 3$ was
+also found not to exist.
+
+This leads to the following conclusion:
+
+\begin{theorem}
+If $f$ is not continuous at $x = a$, then $f$ is not differentiable at $x = a$.
+\end{theorem}
+
+\begin{proof}
+The derivative of $f$ at $x = a$ is defined as:
+\[
+    f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+\]
+For this limit to exist, $f(a)$ must itself be defined, and $f$ must be continuous at $x = a$.
+If $f$ is discontinuous at $x = a$, then either $f(a)$ is undefined, or
+$\lim_{x \to a} f(x) \neq f(a)$, in either case making the difference quotient ill-defined.
+Therefore, the derivative cannot exist at a point of discontinuity.
+\end{proof}
+
+\noindent\textbf{Conclusion:} The derivative of a function at a point of discontinuity does \textbf{not} exist.
+
+
+\section*{v) Differentiability at a Point of Continuity}
+
+Using the results from parts (ii) and (iii), continuity at a point is \emph{necessary} but
+\textbf{not sufficient} for differentiability. That is:
+\[
+    f \text{ differentiable at } a \implies f \text{ continuous at } a,
+    \qquad \text{but the converse is } \textbf{false}.
+\]
+
+\subsection*{Check: $y = |x|$ at $x = 0$}
+
+\textbf{Continuity:}
+\[
+    \lim_{x \to 0} |x| = 0 = f(0)
+\]
+So $y = |x|$ is continuous at $x = 0$. 
+
+\bigskip
+\textbf{Differentiability:}
+
+Left-hand derivative:
+\[
+    \lim_{h \to 0^-} \frac{|0 + h| - |0|}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1
+\]
+
+Right-hand derivative:
+\[
+    \lim_{h \to 0^+} \frac{|0 + h| - |0|}{h} = \lim_{h \to 0^+} \frac{h}{h} = +1
+\]
+
+Since the left-hand and right-hand derivatives are not equal:
+\[
+    \lim_{h \to 0^-} \frac{|h|}{h} \neq \lim_{h \to 0^+} \frac{|h|}{h}
+\]
+the derivative of $y = |x|$ at $x = 0$ does \textbf{not} exist, even though the function is
+continuous there.
+
+\subsection*{Summary}
+
+
+\noindent\textbf{Conclusion:} Differentiability is a strictly stronger condition than continuity.
+A function can be continuous at a point without being differentiable there, as demonstrated by
+$y = |x|$ at $x = 0$.
 
 
 % ============================================================
