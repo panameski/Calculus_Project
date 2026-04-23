@@ -437,7 +437,7 @@ The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On
 \subsubsection*{Part (ii) — Riemann Sum Formula}
 Using the right-endpoint rule with $n$ equal sub-intervals ($\Delta x = 2/n$):
 \[
-R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} = \frac{4(n+1)(2n+1)}{3n^{2}}+4.
+R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} .
 \]
 
 \subsubsection*{Part (iii) — Definite Integral and Conclusion}
