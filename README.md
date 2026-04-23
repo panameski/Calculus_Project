@@ -424,13 +424,13 @@ The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On
     \vspace{1em} % Adds a small space between image and table
 
     \captionof{table}{Right-endpoint Riemann sums $R_{n}$ for $y=x^{2}+2$ on $[0,2]$}
-    \begin{tabular}{cc|cc}
+    \begin{tabular}{cc}
     \toprule
-    $n$ & $R_{n}$ & $n$ & $R_{n}$ \\ \midrule
-    10  & 7.0800 & 100   & 6.7068 \\ 
-    20  & 6.8700 & 500   & 6.6747 \\
-    30  & 6.8015 & 1000  & 6.6707 \\ 
-    60  & 6.7337 & 10000 & 6.6671 \\ \bottomrule
+    $n$ & $R_{n}\midrule
+    10  & 7.0800  \\ 
+    20  & 6.8700  \\
+    30  & 6.8015 \\ 
+    60  & 6.7337 \\ \bottomrule
     \end{tabular}
 \end{minipage}
 
