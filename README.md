@@ -421,7 +421,7 @@ The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On
     \includegraphics[width=0.55\textwidth]{Act4.png}
     \captionof{figure}{The region under $y=x^2+2$ on $[0,2]$ approximated by rectangles.}
     \label{fig:act3graph}
-    \vspace{1em} % Adds a small space between image and table
+    \vspace{0.3em} % Adds a small space between image and table
 
     \captionof{table}{Right-endpoint Riemann sums $R_{n}$ for $y=x^{2}+2$ on $[0,2]$}
     \begin{tabular}{cc}
