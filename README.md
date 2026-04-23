@@ -450,6 +450,29 @@ R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} .
 
 
 
+\bigskip
+\subsubsection{(v) Riemann Sums for Large $n$}
+
+\begin{table}[h]
+\centering
+\caption{Riemann sums for large $n$}
+\begin{tabular}{cc}
+\toprule
+$n$    & $R_{n}$  \\ \midrule
+100    & 6.7068   \\
+500    & 6.6747   \\
+1000   & 6.6707   \\
+5000   & 6.6675   \\
+10000  & 6.6671   \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
 \subsubsection*{Part (iv) — Definite Integral and Conclusion}
 The exact area is calculated analytically as follows:
 \begin{align*}
