@@ -429,7 +429,7 @@ The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On
     \label{fig:act3graph}
     \vspace{0.3em} % Adds a small space between image and table
 
-    \captionof{table}{Right-endpoint Riemann sums $R_{n}$ for $y=x^{2}+2$ on $[0,2]$}
+    \captionof{table}{Part II: Right-endpoint Riemann sums $R_{n}$ for $y=x^{2}+2$ on $[0,2]$}
     \begin{tabular}{cc}
     \toprule
     $n$ & $R_{n}\midrule
