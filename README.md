@@ -421,6 +421,7 @@ The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On
 
 % This minipage block prevents LaTeX from separating the image and table
 
+\section{Part ii}
 \begin{minipage}{\textwidth}
     \centering
     \includegraphics[width=0.4cm\textwidth]{Act4.png}
@@ -433,30 +434,30 @@ The parabola $y=x^{2}+2$ is an upward-opening parabola shifted up by 2 units. On
     \toprule
     $n$ & $R_{n}\midrule
     10  & 7.0800  \\ 
-    20  & 6.8700  \\
+    20  & 6.8700  \\ 
     30  & 6.8015 \\ 
     60  & 6.7337 \\ \bottomrule
     \end{tabular}
 \end{minipage}
 
-\subsubsection*{Part (ii) — Riemann Sum Formula}
+\subsubsection*{Part (iii) — Riemann Sum Formula}
 Using the right-endpoint rule with $n$ equal sub-intervals ($\Delta x = 2/n$):
 \[
 R_{n} = \sum_{k=1}^{n}\left[\left(\frac{2k}{n}\right)^{2}+2\right]\frac{2}{n} .
 \]
 
-\subsubsection*{Part (iii) — Definite Integral and Conclusion}
+\subsubsection*{Part (iv) — Definite Integral and Conclusion}
 The exact area is calculated analytically as follows:
 \begin{align*}
 \int_{0}^{2}(x^{2}+2)\,dx &= \left[\frac{x^{3}}{3}+2x\right]_{0}^{2} \\
 &= \left(\frac{8}{3} + 4\right) - 0 = \frac{20}{3} \approx 6.6667
 \end{align*}
 
-\textbf{Conclusion:} As $n \to \infty$, the Riemann sum $R_n$ converges to $20/3$. This establishes that the definite integral is exactly the limit of the Riemann sums.
+\textbf{(Part V)Conclusion:} As $n \to \infty$, the Riemann sum $R_n$ converges to $20/3$. This establishes that the definite integral is exactly the limit of the Riemann sums.
 
 
 
-
+                             n
 
 
 
